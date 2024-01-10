@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="manifest" href="/manifest.json">
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+    <h2>Controle de despesas</h2>
+
+    <div class="container">
+      <h4>Saldo atual</h4>
+      
+      <h1 id="balance" class="balance">R$ 0.00</h1>
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Receitas</h4>
+          <p id="money-plus" class="money plus">+ R$0.00</p>
+        </div>
+
+        <div>
+          <h4>Despesas</h4>
+          <p id="money-minus" class="money minus">- R$0.00</p>
+        </div>
+      </div>
+
+      <ul id="transactions" class="transactions" style="display: none;"></ul>
+
+      <a href="/pages/transacoes.html">Transações</a>
+      <a href="/pages/gastosPorCategoria.html">Gastos por categoria</a>
+      
+      <h3>Adicionar transação</h3>
+      
+      <form id="form">
+        <div class="form-control">
+          <label for="categoria">Escolha uma categoria</label>
+            <select id="categoria" name="categoria">
+                <option value="">Selecione</option>
+                <option value="1">Outros</option>
+                <option value="2">Alimentação</option>
+                <option value="3">Casa</option>
+                <option value="4">Despesas pessoais</option>
+                <option value="5">Educação</option>
+                <option value="6">Faturas</option>
+                <option value="7">Investimentos</option>
+                <option value="8">Lazer</option>
+                <option value="9">Saúde</option>
+                <option value="10">Tarifas/impostos</option>
+                <option value="11">Transporte</option>
+                <option value="12">Pix</option>
+                <option value="13">Salário</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+          <label for="description">Descrição (opcional)</label>
+          <input type="text" id="description" placeholder="Descrição..." maxlength="50"/>
+        </div>
+
+        <div class="form-control">
+          <label for="amount">Valor</label>
+          <input type="text" id="amount" placeholder="Valor da transação" maxlength="14"/>
+        </div>
+
+        <div class="group-btn">
+          <button class="btn btn-entrada">Entrada</button>
+          <button class="btn btn-saida">Saida</button>
+        </div>
+        
+      </form>
+    </div>
+
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
