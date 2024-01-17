@@ -1,14 +1,14 @@
 const cacheName = 'controle-despesas-v1';
 const filesToCache = [
-  './',
-  './index.html',
-  './pages/transacoes.html',
-  './pages/gastosPorCategoria.html',
-  './styles/style.css',
-  './scripts/app.js',
-  './manifest.json',
-  './assets',
-  './assets/icon.png'
+  '/',
+  '/index.html',
+  '/pages/transacoes.html',
+  '/pages/gastosPorCategoria.html',
+  '/styles/style.css',
+  '/scripts/app.js',
+  '/manifest.json',
+  '/assets',
+  '/assets/icon.png'
   // Adicione outros arquivos que você deseja que sejam armazenados em cache
 ];
 
