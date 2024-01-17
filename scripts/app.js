@@ -28,6 +28,20 @@ const removeTransaction = (ID) => {
       categories[name].balance -= Math.abs(amount);
     }
 
+    Toastify({
+      text: "Transação excluída com sucesso!",
+      duration: 3000,
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "var(--success-color)",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
+
     updateLocalStorage();
     init();
   }
@@ -106,6 +120,19 @@ const addToTransactionsArray = (transactionCategory, transactionDescription, tra
   categories[transactionCategory].balance += Number(transactionAmount);
 
   updateLocalStorage();
+  Toastify({
+    text: "Transação inserida com sucesso!",
+    duration: 3000,
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "var(--success-color)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
 };
 
 const clearInputs = () => {
@@ -170,10 +197,23 @@ if (form) {
     const nomeCorrespondente = categoriaNomes[transactionCategory];
 
     let transactionAmount = transformarEmNumero(inputTransactionAmount.value.trim());
-    const isSomeInputEmpty = nomeCorrespondente === '' || transactionAmount === '';
+    const isSomeInputEmpty = nomeCorrespondente == '' ||transactionAmount == '';
 
     if (isSomeInputEmpty) {
-      alert('Por favor, preencha tanto a categoria quanto o valor da transação');
+      // alert('Por favor, preencha tanto a categoria quanto o valor da transação');
+      Toastify({
+        text: "Por favor, preencha tanto a categoria quanto o valor da transação",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "var(--error-color)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
       return;
     }
 
