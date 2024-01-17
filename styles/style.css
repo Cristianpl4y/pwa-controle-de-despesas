@@ -30,6 +30,10 @@ body {
   width: 350px;
 }
 
+.required{
+  color: var(--error-color);
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;

@@ -21,7 +21,7 @@
           <p id="money-plus" class="money plus">+ R$0.00</p>
         </div>
 
-        <div>
+        <div style="border-right:none;">
           <h4>Despesas</h4>
           <p id="money-minus" class="money minus">- R$0.00</p>
         </div>
@@ -36,7 +36,7 @@
       
       <form id="form">
         <div class="form-control">
-          <label for="categoria">Escolha uma categoria</label>
+          <label for="categoria">Escolha uma categoria <span class='required'>*</span></label>
             <select id="categoria" name="categoria">
                 <option value="">Selecione</option>
                 <option value="1">Outros</option>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="form-control">
-          <label for="amount">Valor</label>
+          <label for="amount">Valor <span class='required'>*</span></label>
           <input type="text" id="amount" placeholder="Valor da transação" maxlength="14"/>
         </div>
 
