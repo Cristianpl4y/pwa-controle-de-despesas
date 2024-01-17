@@ -7,7 +7,6 @@ const filesToCache = [
   './styles/style.css',
   './scripts/app.js',
   './manifest.json',
-  './assets',
   './assets/icon.png'
   // Adicione outros arquivos que você deseja que sejam armazenados em cache
 ];
