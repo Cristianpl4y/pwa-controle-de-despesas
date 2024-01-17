@@ -110,6 +110,7 @@ const addToTransactionsArray = (transactionCategory, transactionDescription, tra
 
 const clearInputs = () => {
   inputTransactionCategory.value = '';
+  inputTransactionDescription.value = '';
   inputTransactionAmount.value = '';
 };
 
