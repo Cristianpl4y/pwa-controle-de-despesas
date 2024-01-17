@@ -5,7 +5,9 @@ const filesToCache = [
   './pages/transacoes.html',
   './pages/gastosPorCategoria.html',
   './styles/style.css',
+  './styles/toastify.css',
   './scripts/app.js',
+  './scripts/toastify.js',
   './manifest.json',
   './assets/icon.png'
   // Adicione outros arquivos que você deseja que sejam armazenados em cache
