@@ -81,6 +81,14 @@ const updateBalanceValues = () => {
   balanceDisplay.textContent = `${total}`;
   incomeDisplay.textContent = `${income}`;
   expenseDisplay.textContent = `${expense}`;
+
+  let isBigValue = income.length > 13 || expense.length > 13;
+  
+  if(isBigValue){
+    incomeDisplay.style.fontSize = '15px';
+    expenseDisplay.style.fontSize = '15px';
+  }
+
 };
 
 const init = () => {
