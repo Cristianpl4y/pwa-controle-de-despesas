@@ -82,6 +82,14 @@ h4 {
   border-right: 1px solid var(--dark-border);
 }
 
+.info{
+  border: 1px solid black;
+  border-radius: 50%;
+  border-color: var(--primary-color);
+  padding: 0px 2px;
+  text-align: center;
+}
+
 .money {
   font-size: 20px;
   letter-spacing: 1px;

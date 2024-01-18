@@ -254,3 +254,19 @@ if ('serviceWorker' in navigator) {
       console.log('Erro ao registrar Service Worker:', error);
     });
 }
+
+function help(){
+  Toastify({
+    text: "Toque diretamente na transação desejada para revelar a opção de excluir.",
+    duration: 4000,
+    newWindow: true,
+    close: true,
+    gravity: "top", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "var(--primary-color)",
+    },
+    onClick: function(){} // Callback after click
+  }).showToast();
+}
