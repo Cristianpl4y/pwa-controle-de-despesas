@@ -111,7 +111,7 @@ const addToTransactionsArray = (transactionCategory, transactionDescription, tra
   const transaction = {
     id: transactionID,
     name: transactionCategory,
-    description: transactionDescription,
+    description: sanitizeInput(transactionDescription),
     amount: Number(transactionAmount),
   };
 
@@ -251,7 +251,7 @@ if ('serviceWorker' in navigator) {
       console.log('Service Worker registrado com sucesso:', registration);
     })
     .catch(error => {
-      console.log('Erro ao registrar Service Worker:', error);
+      console.error('Erro ao registrar Service Worker:', error);
     });
 }
 
@@ -269,4 +269,14 @@ function help(){
     },
     onClick: function(){} // Callback after click
   }).showToast();
+}
+
+function sanitizeInput(description) {
+  // Remove tags HTML
+  const sanitizedDescription = description.replace(/<[^>]*>/g, '');
+
+  // Remove caracteres especiais ou scripts
+  const sanitizedDescriptionFinal = sanitizedDescription.replace(/[&<>"'/]/g, '');
+
+  return sanitizedDescriptionFinal;
 }

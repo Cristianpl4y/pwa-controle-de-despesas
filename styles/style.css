@@ -2,8 +2,8 @@
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --primary-color: #3498db;
-  --success-color: #2ecc71;
+  --primary-color: #155B8E;
+  --success-color: #006600;
   --error-color: #c0392b;
   --light-background: #ecf0f1;
   --dark-border: #dedede;
@@ -38,7 +38,7 @@ a {
   color: var(--primary-color);
   text-decoration: none;
   padding: 10px 15px;
-  background-color: var(--light-background);
+  background-color: #FFFFFF;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
   display: inline-block;
@@ -47,7 +47,17 @@ a {
 
 a:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: #FFFFFF;
+}
+
+.titulo {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h1 {
@@ -56,19 +66,26 @@ h1 {
   color: var(--header-color);
 }
 
-h3 {
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
 
-h4 {
+.h4 {
   margin: 0;
   text-transform: uppercase;
 }
 
 .inc-exp-container {
-  background-color: #fff;
+  background-color: #FFFFFF;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -126,7 +143,7 @@ input[id=description] {
 .btn-saida {
   cursor: pointer;
   box-shadow: var(--box-shadow);
-  color: #fff;
+  color: #FFFFFF;
   border: 0;
   display: block;
   font-size: 16px;
@@ -142,11 +159,11 @@ input[id=description] {
 }
 
 .btn-entrada {
-  background-color: #2ecc71;
+  background-color: var(--success-color);
 }
 
 .btn-saida {
-  background-color: #c0392b;
+  background-color: var(--error-color);
 }
 
 .btn:hover, 
@@ -167,7 +184,7 @@ input[id=description] {
 }
 
 .transactions li {
-  background-color: #fff;
+  background-color: #FFFFFF;
   box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
@@ -178,18 +195,18 @@ input[id=description] {
 }
 
 .transactions li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 5px solid var(--success-color);
 }
 
 .transactions li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid var(--error-color);
 }
 
 .delete-btn {
   cursor: pointer;
   background-color: #e74c3c;
   border: 0;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 20px;
   line-height: 20px;
   padding: 2px 5px;
@@ -232,7 +249,7 @@ input[id=description] {
 }
 
 .category-bar {
-  background-color: #4caf50;
+  background-color: var(--success-color);
   height: 20px;
   margin-top: 5px;
   text-align: center;

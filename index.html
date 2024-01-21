@@ -9,23 +9,29 @@
 
     <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="./styles/toastify.css">
+
+    <!-- SEO -->
+    <meta name="application-name" content="Despesas">
+    <meta name="author" content="Cristian Pessanha da Silva">
+    <meta name="description" content="Um PWA de controle de despesas que salva os dados em localStorage.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
   </head>
   <body>
-    <h2>Controle de despesas</h2>
+    <span class="titulo">Controle de despesas</span>
 
     <div class="container">
-      <h4>Saldo atual</h4>
+      <span class="h4">Saldo atual</span>
       
       <h1 id="balance" class="balance">R$ 0.00</h1>
 
       <div class="inc-exp-container">
         <div>
-          <h4>Receitas</h4>
+          <span class="h4">Receitas</span>
           <p id="money-plus" class="money plus">+ R$0.00</p>
         </div>
 
         <div style="border-right:none;">
-          <h4>Despesas</h4>
+          <span class="h4">Despesas</span>
           <p id="money-minus" class="money minus">- R$0.00</p>
         </div>
       </div>
@@ -35,7 +41,7 @@
       <a href="./pages/transacoes.html">Transações</a>
       <a href="./pages/gastosPorCategoria.html">Gastos por categoria</a>
       
-      <h3>Adicionar transação</h3>
+      <span class="h3">Adicionar transação</span>
       
       <form id="form">
         <div class="form-control">
@@ -78,5 +84,10 @@
 
     <script type="text/javascript" src="./scripts/toastify.js"></script>
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/tests.js"></script>
+    <script>
+      // Para realizar os testes descomentar.
+      // initTests();
+    </script>
   </body>
 </html>

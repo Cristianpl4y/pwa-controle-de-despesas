@@ -7,19 +7,22 @@
     <title>Controle de despesas</title>
     <!-- Toastify -->
     <link rel="stylesheet" type="text/css" href="../styles/toastify.css">
+    <!-- SEO -->
+    <meta name="application-name" content="Despesas">
+    <meta name="author" content="Cristian Pessanha da Silva">
+    <meta name="description" content="Um PWA de controle de despesas que salva os dados em localStorage.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
   </head>
   <body>
-    <h2>Controle de despesas</h2>
+    <span class="titulo">Controle de despesas</span>
     <a href="../">voltar</a>
 
     <div class="container">
-      <h4>Transações <b onclick="help()">&#8505;&#65039;</b></h4>
+      <span class="h4">Transações <b onclick="help()">&#8505;&#65039;</b></span>
       <h1 id="balance" class="balance" style="display: none;">R$ 0.00</h1>
       <p id="money-plus" class="money plus" style="display: none;">+ R$0.00</p>
       <p id="money-minus" class="money minus" style="display: none;">- R$0.00</p>
       
-      <!-- <h3>Transações </h3> -->
-
       <ul id="transactions" class="transactions"></ul>
 
     </div>
