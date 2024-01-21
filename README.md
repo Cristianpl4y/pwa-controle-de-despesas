@@ -1,6 +1,6 @@
 # PWA Controle de Despesas
 
->Este é um projeto de Progressive Web App (PWA) desenvolvido como parte do meu Trabalho de Conclusão de Curso (TCC) na Pós-graduação em Desenvolvimento Full Stack na PUCRS. O aplicativo tem como objetivo oferecer funcionalidades de controle de despesas.
+>Este é um projeto de Progressive Web App (PWA) desenvolvido como parte do meu Trabalho de Conclusão de Curso (TCC) na Pós-graduação em Desenvolvimento Full Stack na PUCRS. O aplicativo tem como objetivo oferecer funcionalidades de controle de despesas e armazenamento de dados em localStorage.
 
 
 ## Estrutura do Projeto
